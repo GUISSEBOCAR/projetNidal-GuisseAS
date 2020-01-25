@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S'authentifier"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <LinearLayout android:padding="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent" >
+        <LinearLayout android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center">
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:singleLine="true">
+                <requestFocus />
+            </EditText>
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="mot de passe"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:singleLine="true" />
+            <Button
+                android:id="@+id/button1ConnexioP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:text="Se connecter"
+                android:onClick="espaceparent"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

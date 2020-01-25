@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.coursenligne">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Wonder">
+        <activity android:name=".ResultatQcm2"></activity>
+        <activity
+            android:name=".AbonnementFull"
+            android:label="faire évoluer votre abonnement"
+            android:parentActivityName=".AbonnementFull">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Abonnee" />
+
+        </activity>
+        <activity
+            android:name=".ABonnementClassique"
+            android:label="faire évoluer votre abonnement"
+            android:parentActivityName=".ABonnementClassique">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Abonnee" />
+        </activity>
+        <activity
+            android:name=".BocarInfo"
+            android:label="information sur votre enfant"
+            android:parentActivityName=".BocarInfo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceParent" />
+        </activity>
+        <activity
+            android:name=".NidalInfo"
+            android:label="information sur votre enfant"
+            android:parentActivityName=".NidalInfo">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceParent" />
+        </activity>
+        <activity android:name=".ResultatQcm" />
+        <activity android:name=".ExercicePdf" />
+        <activity android:name=".PDFOpener" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Connexion"
+            android:label="Connexion"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Wonder.Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Inscription"
+            android:label="Incription"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Contenu"
+            android:label="Nos Cours"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Abonnee"
+            android:label="S&apos;abonner"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Etudiant"
+            android:label="Formulaire"
+            android:parentActivityName=".Inscription"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Etudiant" />
+        </activity>
+        <activity
+            android:name=".Parent"
+            android:label="Formulaire"
+            android:parentActivityName=".Parent"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Inscription" />
+        </activity>
+        <activity
+            android:name=".Professeur"
+            android:label="Formulaire"
+            android:parentActivityName=".Professeur"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Professeur" />
+        </activity>
+        <activity
+            android:name=".AjouterEtudiant"
+            android:label="Formulaire"
+            android:parentActivityName=".AjouterEtudiant"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Parent" />
+        </activity>
+        <activity
+            android:name=".EspaceParent"
+            android:label="Espace Parent"
+            android:parentActivityName=".EspaceParent"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".EspaceEtudiant"
+            android:label="Espace Etudiant"
+            android:parentActivityName=".EspaceEtudiant"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConnexionEtudiant"
+            android:label="Connexion etudiant"
+            android:parentActivityName=".ConnexionEtudiant"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Connexion" />
+        </activity>
+        <activity
+            android:name=".ConnexionParent"
+            android:label="Connexion Parent"
+            android:parentActivityName=".ConnexionParent"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Connexion" />
+        </activity>
+        <activity
+            android:name=".Video"
+            android:label="Vidéos"
+            android:parentActivityName=".Video"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceEtudiant" />
+        </activity>
+        <activity
+            android:name=".Pdf"
+            android:label="Vos cours"
+            android:parentActivityName=".Pdf"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceEtudiant" />
+        </activity>
+        <activity
+            android:name=".Qcm"
+            android:label="Vos exercices Qcm"
+            android:parentActivityName=".Qcm"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceEtudiant" />
+        </activity>
+        <activity
+            android:name=".Exercice"
+            android:label="Vos exercices "
+            android:parentActivityName=".Exercice"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceEtudiant" />
+        </activity>
+        <activity
+            android:name=".PoserQuestion"
+            android:label="Pour poser vos questions "
+            android:parentActivityName=".PoserQuestion"
+            android:theme="@style/Wonder.Detail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EspaceEtudiant" />
+        </activity>
+    </application>
+
+</manifest>

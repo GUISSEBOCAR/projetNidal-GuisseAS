@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S'abonner"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="960dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+
+       >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="none"
+            android:text="Bienvenu"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisissez un type d'abonnement"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/textView20"
+                android:layout_width="152dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="full"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24sp"
+                app:srcCompat="@drawable/abonne" />
+
+            <TextView
+                android:id="@+id/imageView4"
+                android:layout_width="152dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:text="Full"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="195dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/textView22"
+                android:layout_width="153dp"
+                android:layout_height="159dp"
+                android:layout_gravity="center"
+                android:onClick="classique"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24sp"
+                app:srcCompat="@drawable/abonne"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/imageView42"
+                android:layout_width="152dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20sp"
+                android:textSize="25dp"
+                android:text="Classique"
+
+                />
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

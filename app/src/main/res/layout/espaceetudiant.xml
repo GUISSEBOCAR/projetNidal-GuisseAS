@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="960dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center"
+       >
+
+
+        <Button
+            android:id="@+id/deconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="Décoonexion"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityLiveRegion="none"
+            android:text="Bienvenu Mr.X"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que disirez-vous faire aujourdh'uit :"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulter des cours:"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            android:layout_marginTop="30dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:text="PDF"
+                android:onClick="pdfview"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Video"
+                android:onClick="videoview"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Faire des exercices"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/button52"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:text="Exercices"
+                android:onClick="exerciceview"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>/>
+
+            <Button
+                android:id="@+id/button45"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="QCM"
+                android:onClick="qcmview"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Posez  une question"
+            android:onClick="poserquestion"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

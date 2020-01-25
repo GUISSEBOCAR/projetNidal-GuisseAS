@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "191905196826",
+    "firebase_url": "https://projetandroid-6fbcb.firebaseio.com",
+    "project_id": "projetandroid-6fbcb",
+    "storage_bucket": "projetandroid-6fbcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191905196826:android:4924f002c6990842421aa3",
+        "android_client_info": {
+          "package_name": "com.example.coursenligne"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191905196826-81n96liqah1m06v88u1s1qims8cpoipm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvarxrDzX3MEhlUVumw7NmPimpmsw0ghA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191905196826-81n96liqah1m06v88u1s1qims8cpoipm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

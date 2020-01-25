@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenue dans notre application de soutien scolaire!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+      <Button
+          android:layout_width="100dp"
+          android:layout_height="wrap_content"
+          android:text="nos cours"
+          android:textSize="12dp"
+          android:layout_marginTop="10dp"
+          android:onClick="contenu"
+          android:background="@color/colorPrimaryDark"
+          android:textColor="#ffffff"/>/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="s'abonner"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:onClick="abonnee"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"/>/>
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Connection"
+
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:onClick="connexion"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"/>/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Inscription"
+            android:textSize="12dp"
+            android:layout_marginTop="10dp"
+            android:onClick="inscription"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"/>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:text="Décrouvrer notre Application"
+
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@android:dimen/app_icon_size"
+            android:paddingLeft="@android:dimen/app_icon_size"
+            android:paddingRight="@android:dimen/app_icon_size"
+            android:paddingTop="@android:dimen/app_icon_size"
+            tools:context="org.o7planning.androidvideoview.MainActivity"
+            >
+
+
+            <VideoView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/videoView"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
